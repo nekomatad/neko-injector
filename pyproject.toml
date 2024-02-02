@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "neko-injector"
+version = "0.1.0"
+description = ""
+authors = ["hhh"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+neko-configparser = {git="https://github.com/nekomatad/neko-configparser"}
+#neko-configparser = {path = "../neko-configparser", develop = true}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
