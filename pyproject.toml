@@ -7,8 +7,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-neko-configparser = {git="https://github.com/nekomatad/neko-configparser"}
-#neko-configparser = {path = "../neko-configparser", develop = true}
+
+[tool.poetry.group.neko.dependencies]
+neko-configparser = {path = "../neko-configparser", develop = true}
 
 
 [build-system]

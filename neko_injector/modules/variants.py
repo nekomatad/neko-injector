@@ -17,8 +17,12 @@ def inject_object(*objects) -> None:
                 continue
 
 
-def get_injected_object(*objects: Type[T]) -> Iterable[T]:
+def get_injected_objects(*objects: Type[T]) -> Iterable[T]:
     return [apply_replace(obj) for obj in objects]
+
+
+def get_injected_object(obj: Type[T]) -> T:
+    return apply_replace(obj)
 
 
 def inject_module(mod: ModuleType) -> None:
